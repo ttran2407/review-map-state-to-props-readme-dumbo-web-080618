@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './App.css';
 
 
+
 class App extends Component {
 
   handleOnClickItems() {
@@ -34,8 +35,10 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger;
+
   return { items: state.items }
 }
+
+
 
 export default connect(mapStateToProps)(App);
